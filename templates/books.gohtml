@@ -1,0 +1,35 @@
+{{template "header"}}
+<body>
+{{template "nav-bar"}}
+<div class="container-fluid">
+    {{template "content-header"}}
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>ISBN</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{range .}}
+        <tr>
+            <td nowrap=""><a href="/books/show?isbn={{.Isbn}}">{{.Isbn}}</a></td>
+            <td>{{.Title}}</td>
+            <td>{{.GetAuthorNames}}</td>
+            <td>{{.FormatBookPrice}}</td>
+            <td><a href="#" onclick="updateBook({{.Isbn}})" class="btn btn-primary" data-toggle="modal" data-target="#book" data-authorId="{{.GetAuthorIds}}">update</a></td>
+            <td><a href="#" data-href="/books/delete/process?isbn={{.Isbn}}" data-toggle="modal" class="btn btn-danger" data-target="#confirm-delete">delete</a></td>
+        </tr>
+        {{end}}
+        </tbody>
+    </table>
+    <a id="addBtn" href="#" data-toggle="modal" data-target="#book" data-authorId="0">
+            <span class="glyphicon glyphicon-plus"></span>
+    </a>
+</div>
+{{template "book-modal"}}
+{{template "delete-modal"}}
+</body>
+{{template "footer"}}

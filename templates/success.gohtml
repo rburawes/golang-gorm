@@ -1,0 +1,19 @@
+{{define "success"}}
+<div class="modal fade success-popup" id="successPopup" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="myModalLabel">Saved!</h4>
+            </div>
+            <div class="modal-body text-center">
+                <img src="/assets/img/check.png">
+                <p id="successContent" class="lead"></p>
+                <a href="/books" class="rd_more btn btn-default">Go to books</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+{{end}}

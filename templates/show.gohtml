@@ -1,0 +1,17 @@
+{{template "header"}}
+<body>
+{{template "nav-bar"}}
+<div class="container">
+    {{template "content-header"}}
+    <span>
+        <h3>{{.Title}} by {{.GetAuthorNames}}</h3>
+        {{range .GetAuthorDetails}}
+        <p class="text-justify">
+            {{.}}
+        </p>
+        {{end}}
+    </span>
+    <p class="link"><a href="/books" class="btn btn-default">Back</a></p>
+</div>
+</body>
+{{template "footer"}}

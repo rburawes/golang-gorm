@@ -1,0 +1,34 @@
+{{template "header"}}
+<body>
+<div class="div-background">
+    <div class="div-center">
+        <div class="content">
+            <h3>Please Login</h3>
+            <form action="/login" method="post" id="login">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"
+                           data-validation="required">
+                    <span id="error_email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter password"
+                           name="password"
+                           data-validation="required">
+                    <span id="error_password" class="text-danger"></span>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="remember"> Remember me</label>
+                </div>
+                <div class="signup-div">
+                    <button type="submit" class="btn btn-primary" id="submit">Log in</button>
+                    <a href="/signup" class="btn btn-default" name="signup" id="signup">Sign up</a>
+                </div>
+                <div class="alert alert-danger" style="display: none" id="error-msg"></div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+{{template "footer"}}

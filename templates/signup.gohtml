@@ -1,0 +1,46 @@
+{{template "header"}}
+<body>
+<div class="div-background">
+    <div class="div-center">
+        <div class="content">
+            <h3>Get started</h3>
+            <form action="/signup" method="post" id="signup">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"
+                           data-validation="email">
+                    <span id="error_email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="firstname">First Name:</label>
+                    <input type="firstname" class="form-control" id="firstname" placeholder="Enter first name"
+                           name="firstname">
+                    <span id="error_firstname" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name:</label>
+                    <input type="lastname" class="form-control" id="lastname" placeholder="Enter last name"
+                           name="lastname">
+                    <span id="error_lastname" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter password"
+                           name="password" data-validation="required">
+                    <span id="error_password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="cpassword">Confirm password:</label>
+                    <input type="password" class="form-control" id="cpassword" placeholder="Confirm password"
+                           name="cpassword" data-validation="required">
+                    <span id="error_confirm_password" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit">Register</button>
+                <a href="/" id="cancel" name="cancel" class="btn btn-default">Cancel</a>
+                <div class="alert alert-danger" style="display: none" id="error-msg"></div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+{{template "footer"}}
