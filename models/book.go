@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/rburawes/golang-demo/config"
+	"github.com/rburawes/golang-gorm/config"
 	"net/http"
 	"strconv"
 )

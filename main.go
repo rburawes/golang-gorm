@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/rburawes/golang-demo/routes"
+	"github.com/rburawes/golang-gorm/routes"
 )
 
 // Application starts here.

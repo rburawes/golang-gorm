@@ -2,7 +2,7 @@ package models
 
 import (
 	"errors"
-	"github.com/rburawes/golang-demo/config"
+	"github.com/rburawes/golang-gorm/config"
 	"golang.org/x/crypto/bcrypt"
 	"net/http"
 )

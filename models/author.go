@@ -2,7 +2,7 @@ package models
 
 import (
 	"errors"
-	"github.com/rburawes/golang-demo/config"
+	"github.com/rburawes/golang-gorm/config"
 )
 
 // Author holds data about the author of the book.

@@ -1,7 +1,7 @@
 package sessions
 
 import (
-	"github.com/rburawes/golang-demo/models"
+	"github.com/rburawes/golang-gorm/models"
 	"github.com/satori/go.uuid"
 	"net/http"
 	"time"

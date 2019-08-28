@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"github.com/rburawes/golang-demo/controllers"
+	"github.com/rburawes/golang-gorm/controllers"
 	"net/http"
 )
 

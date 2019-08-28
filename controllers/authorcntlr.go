@@ -3,8 +3,8 @@ package controllers
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/rburawes/golang-demo/models"
-	"github.com/rburawes/golang-demo/sessions"
+	"github.com/rburawes/golang-gorm/models"
+	"github.com/rburawes/golang-gorm/sessions"
 	"net/http"
 )
 

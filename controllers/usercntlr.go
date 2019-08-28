@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"github.com/rburawes/golang-demo/config"
-	"github.com/rburawes/golang-demo/models"
-	"github.com/rburawes/golang-demo/sessions"
+	"github.com/rburawes/golang-gorm/config"
+	"github.com/rburawes/golang-gorm/models"
+	"github.com/rburawes/golang-gorm/sessions"
 	"net/http"
 	"time"
 )
