@@ -1,3 +1,5 @@
+[![PkgGoDev](https://pkg.go.dev/badge/rburawes/golang-demo/blob/master/README.md)](https://pkg.go.dev/rburawes/golang-demo/blob/master/README.md)
+
 # About
 
 A simple book store application that demonstrates basic CRUD functions using [GORM](http://doc.gorm.io/) library.
